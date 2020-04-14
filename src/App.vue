@@ -5,7 +5,6 @@
     </LoadLayout>
 
     <MainLayout v-else/>
-    <h1></h1>
   </div>
 </template>
 

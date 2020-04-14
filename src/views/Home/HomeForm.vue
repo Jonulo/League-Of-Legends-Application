@@ -9,17 +9,17 @@
           <!-- Grupo 1 (Input texto) -->
           <b-form-group
             id="input-group-1"
-            label="BattleTag:"
+            label="Summoner Name:"
             label-for="input-text"
             description="Format: YourProfile#1234"
           >
             <b-form-input
               id="input-text"
-              v-model="form.battleTag"
+              v-model="form.summonerName"
               type="text"
               size="lg"
               required
-              placeholder="BattleTag"
+              placeholder="SummonerName"
             />
           </b-form-group>
 
@@ -57,7 +57,7 @@ export default {
   data () {
     return {
       form: {
-        battleTag: '',
+        summonerName: '',
         region: 'eu'
       }
     }
@@ -69,8 +69,8 @@ export default {
   },
   methods: {
     onSubmit () {
-      const { region, battleTag } = this.form
-      this.$router.push({ name: 'Profile', params: { region, battleTag: battleTag.replace('#', '-') } })
+      const { region, summonerName } = this.form
+      this.$router.push({ name: 'Profile', params: { region, summonerName } })
     }
   }
 }

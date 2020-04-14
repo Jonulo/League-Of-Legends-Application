@@ -10,7 +10,6 @@
         </a>
       </em>
       and select your region to see your profile!</p>
-      <h3>{{ fake }}</h3>
     <hr class="mt-5">
   </div>
 </template>

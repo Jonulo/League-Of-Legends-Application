@@ -13,12 +13,13 @@ new Vue({
   router,
   store,
   methods: {
-    init () {
-      store.dispatch('fakeToken/funcionLocal', null, { root: true })
-    }
+    // LLamar a una funcion en actions en el store
+    // init () {
+    //   store.dispatch('{nombreDelModulo}/{nombreFuncionenActions}', null, { root: true })
+    // }
   },
   created () {
-    this.init()
+    // this.init()
   },
   render: h => h(App)
 }).$mount('#app')

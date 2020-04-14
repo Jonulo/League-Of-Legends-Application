@@ -6,8 +6,8 @@ Vue.use(VueRouter)
 // Configuración rutas
 const routerOptions = [
   { path: '/', name: 'Home' },
-  { path: '/region/:region/profile/:battleTag', name: 'Profile' },
-  { path: '/region/:region/profile/:battleTag/hero/:heroId', name: 'Hero' },
+  { path: '/:region/:summonerName', name: 'Profile' },
+  { path: '/:region/:summonerName/:heroId', name: 'Hero' },
   { path: '/about', name: 'About' },
   { path: '/error', name: 'Error' },
   { path: '*', redirect: { name: 'Home' } }
