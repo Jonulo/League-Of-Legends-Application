@@ -1,5 +1,0 @@
-2020/04/14-02:03:47.024 322d Reusing MANIFEST /home/jonu/Documents/tft-app/”/var/tmp/Chrome”/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/14-02:04:23.357 6ed2 Level-0 table #5: started
-2020/04/14-02:04:23.360 6ed2 Level-0 table #5: 1701 bytes OK
-2020/04/14-02:04:23.361 6ed2 Delete type=0 #3
-2020/04/14-02:04:23.362 6ed2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

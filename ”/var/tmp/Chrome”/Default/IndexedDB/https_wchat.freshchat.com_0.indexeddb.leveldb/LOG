@@ -1,7 +1,0 @@
-2020/04/13-23:06:13.009 6e2a Reusing MANIFEST /home/jonu/Documents/tft-app/”/var/tmp/Chrome”/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/13-23:06:13.010 6e2a Recovering log #3
-2020/04/13-23:06:13.015 6e2a Reusing old log /home/jonu/Documents/tft-app/”/var/tmp/Chrome”/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb/000003.log 
-2020/04/13-23:06:25.304 6ed2 Level-0 table #5: started
-2020/04/13-23:06:25.314 6ed2 Level-0 table #5: 731988 bytes OK
-2020/04/13-23:06:25.317 6ed2 Delete type=0 #3
-2020/04/13-23:06:25.317 6ed2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

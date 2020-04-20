@@ -3,18 +3,19 @@
     <LoadLayout v-if="isLoading">
       <BaseLoading/>
     </LoadLayout>
-    <div v-else>
-      <h1>Welcome {{ profileData.name }}!</h1>
-      <h3>Level: {{ profileData.summonerLevel }}</h3>
-    </div>
+
+    <template v-if="profileData !== null && !isLoading"> <!-- Hata que no obtenga la data no renderiza -->
+      <MainBlock :profile-data="profileData"/>
+    </template>
   </div>
 </template>
 
 <script>
 import { getAccount } from '@/api/searchAccount.js'
 import LoadLayout from '@/layouts/LoadLayout'
-import BaseLoading from '@/components/BaseLoading.vue'
+import BaseLoading from '@/components/loadings/BaseLoading.vue'
 import setError from '@/mixins/setError'
+import MainBlock from './MainBlock/index'
 
 export default {
   name: 'ProfileView',
@@ -26,7 +27,8 @@ export default {
   },
   components: {
     LoadLayout,
-    BaseLoading
+    BaseLoading,
+    MainBlock
   },
   mixins: [
     setError // ya podemos usar las funciones de nuestro archivo de forma local
@@ -36,7 +38,6 @@ export default {
       getAccount({ region, account })
         .then(({ data }) => {
           this.profileData = data
-          console.log(data)
         })
         .catch((err) => {
           this.profileData = null
@@ -52,14 +53,17 @@ export default {
           this.$router.push({ name: 'Error' })
         })
         .finally(
-          this.isLoading = false
+          setInterval(() => {
+            this.isLoading = false
+          }, 2000)
+
         )
     }
   },
   created () {
     this.isLoading = true
-    const { region, summonerName: account } = this.$route.params
-    this.fecthData(region, account)
+    const { region, summonerName } = this.$route.params
+    this.fecthData(region, summonerName)
   }
 }
 </script>

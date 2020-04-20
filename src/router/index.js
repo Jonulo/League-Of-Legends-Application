@@ -5,12 +5,13 @@ Vue.use(VueRouter)
 
 // Configuración rutas
 const routerOptions = [
-  { path: '/', name: 'Home' },
-  { path: '/:region/:summonerName', name: 'Profile' },
+  { path: '/', name: 'lol/Home' },
+  { path: '/tft', name: 'tft/Home' },
+  { path: '/profile/:region/:summonerName', name: 'Profile' },
   { path: '/:region/:summonerName/:heroId', name: 'Hero' },
   { path: '/about', name: 'About' },
   { path: '/error', name: 'Error' },
-  { path: '*', redirect: { name: 'Home' } }
+  { path: '*', redirect: { name: 'lol/Home' } }
 ]
 
 // Rutas

@@ -1,4 +1,4 @@
-// BootstrapVue
-import './BootstrapVue'
+// Vuetify
+import './vuetify'
 // Vue Font-Awesome
 import './FontAwesome'

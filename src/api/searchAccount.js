@@ -2,7 +2,7 @@ import { get } from 'axios'
 
 const protocol = 'https://'
 const host = '.api.riotgames.com/'
-const key = 'RGAPI-bd100879-44be-44f3-86d2-e34b469573f9'
+const key = 'RGAPI-17e79dff-6629-4129-a241-28f5fecf42dc'
 
 function getAccount ({ region, account }) {
   const resource = `lol/summoner/v4/summoners/by-name/${account}`

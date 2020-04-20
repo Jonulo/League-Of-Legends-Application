@@ -14,7 +14,6 @@ export default {
     // desde un componente (en el cual tengamos importado el mixin) podemos llamar al método
     setApiErr (params) {
       this.setError(params)
-      console.log(params)
     }
   }
 }

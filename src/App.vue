@@ -1,19 +1,13 @@
 <template>
-  <div id="app">
-    <LoadLayout v-if="isLoading">
-      <BaseLoading/>
-    </LoadLayout>
-
-    <MainLayout v-else/>
-  </div>
+  <v-app>
+    <MainLayout/>
+  </v-app>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 
-import LoadLayout from './layouts/LoadLayout'
 import MainLayout from './layouts/MainLayout'
-import BaseLoading from '@/components/BaseLoading.vue'
 
 export default {
   name: 'App',
@@ -22,9 +16,7 @@ export default {
     }
   },
   components: {
-    MainLayout,
-    LoadLayout,
-    BaseLoading
+    MainLayout
   },
   computed: {
     // Uso: mapState(moduleName, { state })
@@ -47,8 +39,8 @@ export default {
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   text-align center
-  color #fff
-  background-color black
+  color black
+  background-color #fff
   // background-image url('../src/assets/img/mainBackground.jpeg')
   // background-repeat no-repeat
   // background-size cover

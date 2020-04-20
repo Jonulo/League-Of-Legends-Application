@@ -1,6 +1,0 @@
-2020/04/13-22:38:13.870 665c Reusing MANIFEST /home/jonu/Documents/tft-app/”/var/tmp/Chrome”/Default/Local Storage/leveldb/MANIFEST-000001
-2020/04/13-22:38:13.870 665c Recovering log #3
-2020/04/13-22:38:13.872 665c Reusing old log /home/jonu/Documents/tft-app/”/var/tmp/Chrome”/Default/Local Storage/leveldb/000003.log 
-2020/04/13-22:38:29.247 6779 Level-0 table #5: started
-2020/04/13-22:38:29.248 6779 Level-0 table #5: 13540 bytes OK
-2020/04/13-22:38:29.250 6779 Delete type=0 #3
