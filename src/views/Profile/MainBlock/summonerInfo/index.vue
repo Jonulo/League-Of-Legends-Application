@@ -7,10 +7,10 @@
       >
         <v-col class="text-center" cols="12">
           <v-avatar size="80">
-            <img
+            <!-- <img
               :src= "require(`@/assets/img/profileicon/${this.summoner.profileIconId}.png`)"
               alt="SummonerIcon"
-            >
+            > -->
           </v-avatar>
           <h1 class="display-1 mb-2">{{ summoner.name }}</h1>
           <h4 class="subheading">Level: {{ summoner.summonerLevel }}</h4>

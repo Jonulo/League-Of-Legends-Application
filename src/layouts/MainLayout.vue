@@ -92,17 +92,17 @@ export default {
             path: '/tft'
           },
           {
-            classes: ['fas', 'home'],
+            classes: ['fas', 'user-circle'],
             title: 'Profile',
             path: '/profile/:region/:summonerName'
           },
           {
-            classes: ['fas', 'users'],
+            classes: ['fas', 'trophy'],
             title: 'Rankingstft',
             path: '/error'
           },
           {
-            classes: ['fas', 'users'],
+            classes: ['fas', 'info-circle'],
             title: 'About',
             path: '/about'
           }
@@ -115,17 +115,17 @@ export default {
             path: '/'
           },
           {
-            classes: ['fas', 'home'],
+            classes: ['fas', 'user-circle'],
             title: 'Profile',
             path: '/profile/:region/:summonerName'
           },
           {
-            classes: ['fas', 'users'],
+            classes: ['fas', 'trophy'],
             title: 'Rankings',
             path: '/error'
           },
           {
-            classes: ['fas', 'users'],
+            classes: ['fas', 'info-circle'],
             title: 'About',
             path: '/about'
           }

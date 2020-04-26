@@ -3,6 +3,7 @@
     <HomeTitle :game="switchGame"/>
 
     <MainForm/>
+    <RankingTable/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 // @ is an alias to /src
 import HomeTitle from '@/components/Home/Title/Index'
 import MainForm from '@/components/Home/summonerForm/Index'
+import RankingTable from '@/components/Home/RankingTable/Index'
 
 export default {
   name: 'lolHome',
   components: {
     HomeTitle,
-    MainForm
+    MainForm,
+    RankingTable
   },
   data: function () {
     return {

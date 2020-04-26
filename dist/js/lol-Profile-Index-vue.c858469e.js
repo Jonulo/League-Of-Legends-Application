@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["lol-Profile-Index-vue"],{"0041":function(l,n,e){"use strict";e.r(n);var o,u,p=e("2877"),s={},t=Object(p["a"])(s,o,u,!1,null,null,null);n["default"]=t.exports}}]);
+//# sourceMappingURL=lol-Profile-Index-vue.c858469e.js.map

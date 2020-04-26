@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Error-Index-vue"],{"9cd1":function(r,e,t){"use strict";t.r(e);var n=function(){var r=this,e=r.$createElement,t=r._self._c||e;return t("div",[t("h1",[r._v("Error Page")]),t("h2",[r._v(r._s(r.error.data.status.message))])])},o=[],a=t("5530"),c=t("2f62"),s={name:"ErrorView",computed:Object(a["a"])({},Object(c["c"])("error",{error:"error"}))},u=s,l=t("2877"),d=Object(l["a"])(u,n,o,!1,null,null,null);e["default"]=d.exports}}]);
+//# sourceMappingURL=Error-Index-vue.5ba10b43.js.map

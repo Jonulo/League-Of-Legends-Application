@@ -61,7 +61,8 @@ export default {
   },
   computed: {
     regions () {
-      return regions.map(region => ({ value: region, text: region.toUpperCase() }))
+      return Object.entries(regions).map(([k, v], i) =>
+        ({ value: v, text: k.toUpperCase() }))
     }
   },
   methods: {
