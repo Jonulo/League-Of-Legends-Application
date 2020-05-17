@@ -1,5 +1,7 @@
 # tft-app
 
+### El  único propósito de esta aplicación es poder practicar programación frontEnd
+
 ## Project setup
 ```
 npm install
