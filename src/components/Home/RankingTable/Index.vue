@@ -34,6 +34,12 @@ import { getPlayers } from '@/api/ranking.js'
 import { regions } from '@/utils/regions'
 
 export default {
+  props: {
+    game: {
+      type: Boolean,
+      required: true
+    }
+  },
   data: () => ({
     fixedHeader: true,
     height: 500,
@@ -54,13 +60,49 @@ export default {
   }),
   methods: {
     async fetchData () {
-      var regionsPromises = Object.entries(regions).map(([k, v]) => getPlayers(v))
+      var regionsPromises = Object.entries(regions).map(([k, v]) => getPlayers(v, this.game))
       try {
         var playersData = await Promise.all(regionsPromises)
       } catch (err) {
         this.resolveDataText = 'Error! data is not available'
         // onerror(err)
       }
+      (this.game) ? this.tftData(playersData) : this.lolData(playersData)
+    },
+    tftData (playersData) {
+      Object.entries(regions).map(([k, v], i) => {
+        playersData[i].data.entries.forEach(player => {
+          // getAccount(v, player.summonerId) // error
+          //   .then(response => {
+          //     player.icon = response.profileIconId
+          //   })
+          player.region = k
+        })
+      })
+      this.players = [
+        ...playersData[0].data.entries,
+        ...playersData[1].data.entries,
+        ...playersData[2].data.entries,
+        ...playersData[3].data.entries,
+        ...playersData[4].data.entries,
+        ...playersData[5].data.entries,
+        ...playersData[6].data.entries,
+        ...playersData[7].data.entries,
+        ...playersData[8].data.entries,
+        ...playersData[9].data.entries,
+        ...playersData[10].data.entries
+      ]
+      this.players.sort((a, b) => {
+        if (a.leaguePoints < b.leaguePoints) {
+          return 1
+        }
+        if (a.leaguePoints > b.leaguePoints) {
+          return -1
+        }
+        return 0
+      })
+    },
+    lolData (playersData) {
       Object.entries(regions).map(([k, v], i) => {
         playersData[i].data.forEach(player => {
           // getAccount(v, player.summonerId) // error
@@ -70,7 +112,6 @@ export default {
           player.region = k
         })
       })
-      // console.log(playersData)
       this.players = [
         ...playersData[0].data,
         ...playersData[1].data,
@@ -93,7 +134,6 @@ export default {
         }
         return 0
       })
-      // console.log(this.players)
     },
     getColor (points) {
       if (points > 1600) return '#D4AF37'

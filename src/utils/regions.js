@@ -1,5 +1,3 @@
-// const regions = ['la1', 'la2', 'na1', 'euw1', 'br1', 'eun1', 'jp1', 'kr', 'oc1', 'tr1', 'ru']
-
 const regions = {
   LAN: 'la1',
   LAS: 'la2',

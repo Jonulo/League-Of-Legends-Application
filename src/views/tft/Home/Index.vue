@@ -1,8 +1,8 @@
 <template>
   <div>
     <HomeTitle :game="switchGame"/>
-
     <MainForm/>
+    <RankingTable :game="switchGame"/>
   </div>
 </template>
 
@@ -10,12 +10,14 @@
 // @ is an alias to /src
 import HomeTitle from '@/components/Home/Title/Index'
 import MainForm from '@/components/Home/summonerForm/Index'
+import RankingTable from '@/components/Home/RankingTable/Index'
 
 export default {
   name: 'tftHome',
   components: {
     HomeTitle,
-    MainForm
+    MainForm,
+    RankingTable
   },
   data: function () {
     return {

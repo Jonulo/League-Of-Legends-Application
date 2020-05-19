@@ -6,7 +6,7 @@
     ></div>
     <p class="lead text-muted mt-4">Enter your
       <em>
-        <a href="https://eu.battle.net/support/es/article/75767"
+        <a href="https://support-leagueoflegends.riotgames.com/hc/en-us/articles/201752814-Summoner-Name-FAQ"
         target="_blank"
         title="Format: YourProfile#1234"
         >

@@ -1,9 +1,8 @@
 <template>
   <div>
     <HomeTitle :game="switchGame"/>
-
     <MainForm/>
-    <RankingTable/>
+    <RankingTable :game="switchGame" />
   </div>
 </template>
 
