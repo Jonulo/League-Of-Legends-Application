@@ -1,6 +1,22 @@
-# tft-app
+# League of Legends App
 
-### El  único propósito de esta aplicación es poder practicar programación frontEnd
+## Tabla de contenidos
+* [Información General](#informacion-general)
+* [Tecnologías](#tecnologias)
+
+## Información General
+Esta aplicación es un proyecto con el único fin de practicar con tecnologías
+de FrontEnd. La aplicación hace uso de la [Api de RIOT](https://developer.riotgames.com)
+
+## Tecnologías
+* HTML5
+* CSS3
+  * Stylus
+* Javascript
+  * Vuejs
+    *Vuetify
+* Npm
+  * Axios
 
 ## Project setup
 ```
