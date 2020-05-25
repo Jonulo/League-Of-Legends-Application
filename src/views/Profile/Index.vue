@@ -4,7 +4,7 @@
       <BaseLoading/>
     </LoadLayout>
 
-    <template v-if="profileData !== null && !isLoading"> <!-- Hata que no obtenga la data no renderiza -->
+    <template v-if="profileData !== null && !isLoading"> <!-- Hasta que no obtenga la data no renderiza -->
       <MainBlock :profile-data="profileData"/>
     </template>
   </div>
@@ -15,7 +15,7 @@ import { getAccount } from '@/api/searchAccount.js'
 import LoadLayout from '@/layouts/LoadLayout'
 import BaseLoading from '@/components/loadings/BaseLoading.vue'
 import setError from '@/mixins/setError'
-import MainBlock from './MainBlock/index'
+import MainBlock from '@/components/Profile/index'
 
 export default {
   name: 'ProfileView',
@@ -35,7 +35,7 @@ export default {
   ],
   methods: {
     fecthData (region, account) {
-      getAccount({ region, account })
+      getAccount(region, account)
         .then(({ data }) => {
           this.profileData = data
         })

@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["tft-Profile-Index-vue"],{ef24:function(e,n,l){"use strict";l.r(n);var t,u,o=l("2877"),p={},s=Object(o["a"])(p,t,u,!1,null,null,null);n["default"]=s.exports}}]);
-//# sourceMappingURL=tft-Profile-Index-vue.7b8ff432.js.map

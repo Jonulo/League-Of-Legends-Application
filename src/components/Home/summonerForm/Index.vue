@@ -54,7 +54,7 @@ export default {
     return {
       form: {
         summonerName: '',
-        region: 'eu'
+        region: ''
       },
       valid: false
     }

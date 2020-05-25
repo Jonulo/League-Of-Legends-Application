@@ -48,7 +48,7 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>League of Legends</v-toolbar-title>
+      <v-toolbar-title>{{titleBar}}</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
@@ -56,35 +56,27 @@
         <router-view/>
       </v-container>
     </v-content>
-
-    <v-footer app>
-      <span>&copy; 2020</span>
-    </v-footer>
   </div>
 </template>
 
 <script>
-// import FooterBar from '@/components/Footer/Index'
-
 export default {
   name: 'MainLayout',
-  // components: {
-  //   FooterBar,
-  // },
   data: () => ({
     drawer: null,
     icons: [],
     mobileNavigator: true,
-    game: ''
+    game: '',
+    titleBar: ''
   }),
   created () {
-    this.$vuetify.theme.dark = false
-    // this.switchGame() fix this!!
+    this.$vuetify.theme.dark = true
     this.mainUrl('')
   },
   methods: {
     mainUrl: function (url) {
       if (url === 'tft') {
+        this.titleBar = 'Team Fight Tactics'
         this.icons = [
           {
             classes: ['fas', 'home'],
@@ -108,6 +100,7 @@ export default {
           }
         ]
       } else if (url === '') {
+        this.titleBar = 'League of legends'
         this.icons = [
           {
             classes: ['fas', 'home'],
@@ -130,15 +123,6 @@ export default {
             path: '/about'
           }
         ]
-      }
-    },
-    switchGame () {
-      const pathName = this.$route.name
-      this.game = pathName.includes('tft')
-      if (this.game) {
-        this.mainUrl('tft')
-      } else {
-        this.mainUrl('')
       }
     }
   }

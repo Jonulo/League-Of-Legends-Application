@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import summonerInfo from './summonerInfo/index'
+import summonerInfo from './header/index'
 
 export default {
   name: 'MainBlock',
