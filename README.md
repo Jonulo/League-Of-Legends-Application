@@ -3,8 +3,9 @@
 ![preview](./src/assets/img/lol_app.PNG)
 
 ## Tabla de contenidos
-* [Información General](#informacion-general)
-* [Tecnologías](#tecnologias)
+* [Información General](#Informacion-general)
+* [Tecnologías](#Tecnologias)
+* [Project setup](#Project-setup)
 
 ## Información General
 Esta aplicación es un proyecto con el único fin de practicar con tecnologías
@@ -24,7 +25,7 @@ La idea general de la aplicación es; mostrar y buscar información de los jugad
 
 ## Project setup
 
-La [Api de RIOT](https://developer.riotgames.com) no se puede consumir de forma normal por sus [CORS Policy](https://www.codecademy.com/articles/what-is-cors), esto es para asegurar el correcto uso de su información, existen varias maneras de solucionar este inconveniente pero como este proyecto es únicamente para practicar tecnologías de FrontEnd lo que haremos es desactivar la seguridad de nuestro navegador, en este caso Chrome.
+La [Api de RIOT](https://developer.riotgames.com) no se puede consumir de forma normal por sus [CORS Policy](https://www.codecademy.com/articles/what-is-cors), esto es para asegurar el correcto uso de su información, existen varias maneras de solucionar este inconveniente, pero como este proyecto es únicamente para practicar tecnologías de FrontEnd lo que haremos es desactivar la seguridad de nuestro navegador, en este caso Chrome.
 
 Para windows:
 ```
@@ -34,7 +35,7 @@ En linux (Ubuntu):
 ```
 google-chrome  --user-data-dir=”/var/tmp/Chrome” --disable-web-security
 ```
-La rutas escritas anteriormente son las más comúnes pero puedes adaptarlas a tu OS.
+La rutas escritas anteriormente son las más comunes pero puedes adaptarlas a la configuración de tu OS.
 
 IMPORTANTE! Debes conocer los riesgos de hacer el proceso de desactivar la seguridad del navegador, recomiendo hacerlo solo para visualizar la aplicación.
 [Riesgos de seguridad](https://games.greggman.com/game/dont-disable-web-security/)
